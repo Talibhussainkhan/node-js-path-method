@@ -12,6 +12,7 @@ console.log(path.dirname(file));   // /home/user/app
 console.log(path.basename(file)); // data.json
 console.log(path.extname(file));   // .json
 console.log(path.parse(file)); // parsed object 
+console.log(path.resolve(file)); // folder\sub\file.txt
 // parse output = {
 //   root: '/',
 //   dir: '/home/user/app',
@@ -54,4 +55,5 @@ try {
 fs.writeFile(path.join(__dirname,"hello/anotherFile.txt"), 'Hello, world!', (err) => {
     if (err) throw err;
     console.log('File created and content written!');
+
  });
